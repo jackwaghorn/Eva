@@ -582,7 +582,9 @@ textarea {
 
 @media (orientation: portrait) {
   .eye-animation {
-     transform: translate(170%, 5vw);
+  	width:18%;
+  	height:18%;
+    transform: translate(170%, 5vw);
   }
 
   .logo img{
