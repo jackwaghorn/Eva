@@ -251,12 +251,30 @@ canvas {
 
 
 .eye-animation {
+  background-image: url('../img/eva_lips_animation.gif'); 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   position: absolute;
-  mix-blend-mode: multiply;
-  width:18%;
-  transform: translate(188%, 30%);
-/*  top:46%; */
+  width:20%;
+  height:20%;
+  transform: translate(170%, 3.6vw);
 }
+
+.eye-animation:after {
+  height:100% !important;
+  width:100% !important;
+  position:absolute;
+  content:"";
+  width:inherit;
+  height:inherit;
+  background:inherit;
+  filter:blur(2px);        /* glow range */
+  opacity:0.3;
+  mix-blend-mode: darken;
+}
+
+
 
 /* Nav menu */
 span {
@@ -563,6 +581,9 @@ textarea {
 
 
 @media (orientation: portrait) {
+  .eye-animation {
+     transform: translate(170%, 5vw);
+  }
 
   .logo img{
   margin:1em;
